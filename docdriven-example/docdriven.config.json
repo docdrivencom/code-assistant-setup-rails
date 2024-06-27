@@ -1,0 +1,18 @@
+{
+    "templates": [
+        {
+            "name": "Rails Controller",
+            "inputFile": "docdriven/input/basic-controller.rb",
+            "outputDirectory": "docdriven/output",
+            "type": "Endpoints",
+            "split": false
+        },
+        {
+            "name": "Rails Active Record",
+            "inputFile": "docdriven/input/basic-model.rb",
+            "outputDirectory": "docdriven/output",
+            "type": "Schemas",
+            "split": true
+        }
+    ]
+}
