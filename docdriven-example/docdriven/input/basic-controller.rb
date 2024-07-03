@@ -24,7 +24,7 @@ class TodoItemsController < ApplicationController
       end
     end
   
-    # PATCH/PUT /todo_items/1
+    # PUT /todo_items/1
     def update
       if @todo_item.update(todo_item_params)
         render json: @todo_item

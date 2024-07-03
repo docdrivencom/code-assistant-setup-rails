@@ -3,14 +3,28 @@
         {
             "name": "Rails Controller",
             "inputFile": "docdriven/input/basic-controller.rb",
-            "outputDirectory": "docdriven/output",
+            "outputDirectory": "controllers",
             "type": "Endpoints",
             "split": false
         },
         {
             "name": "Rails Active Record",
             "inputFile": "docdriven/input/basic-model.rb",
-            "outputDirectory": "docdriven/output",
+            "outputDirectory": "models",
+            "type": "Schemas",
+            "split": true
+        },
+        {
+            "name": "Rails Routes",
+            "inputFile": "docdriven/input/basic-routes.rb",
+            "outputDirectory": "routes.rb",
+            "type": "Endpoints",
+            "split": false
+        },
+        {
+            "name": "Rails Migration",
+            "inputFile": "docdriven/input/basic-migration.rb",
+            "outputDirectory": "db/migrate/<now:YYYYMMDDHHMMSS>_<snakecase:filename>.rb",
             "type": "Schemas",
             "split": true
         }
