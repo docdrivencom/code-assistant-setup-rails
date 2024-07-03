@@ -3,21 +3,21 @@
         {
             "name": "Rails Controller",
             "inputFile": "docdriven/input/basic-controller.rb",
-            "outputDirectory": "controllers",
+            "outputDirectory": "app/controllers",
             "type": "Endpoints",
             "split": false
         },
         {
             "name": "Rails Active Record",
             "inputFile": "docdriven/input/basic-model.rb",
-            "outputDirectory": "models",
+            "outputDirectory": "app/models",
             "type": "Schemas",
             "split": true
         },
         {
             "name": "Rails Routes",
             "inputFile": "docdriven/input/basic-routes.rb",
-            "outputDirectory": "routes.rb",
+            "outputDirectory": "config/routes.rb",
             "type": "Endpoints",
             "split": false
         },
