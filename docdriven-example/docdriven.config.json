@@ -26,7 +26,7 @@
             "inputFile": "docdriven/input/basic-migration.rb",
             "outputDirectory": "db/migrate/<now:YYYYMMDDHHMMSS>_<snakecase:filename>.rb",
             "type": "Schemas",
-            "split": true
+            "split": false
         }
     ]
 }
