@@ -5,17 +5,17 @@ Rails.application.routes.draw do
   # Can be used by load balancers and uptime monitors to verify that the app is live.
   get "up" => "rails/health#show", as: :rails_health_check
 
-  # important: use snake_case for routes and id's - example: /todo_items/{id}/comments/{comment_id}
+  # important: use snake_case for routes and id's - example: /todo_items/:id/comments/:comment_id
 
   # todo items routes
   get "/todo_items", to: "todo_items#index"
-  get "/todo_items/{id}", to: "todo_items#show"
+  get "/todo_items/:id", to: "todo_items#show"
   post "/todo_items", to: "todo_items#create"
-  put "/todo_items/{id}", to: "todo_items#update"
-  delete "/todo_items/{id}", to: "todo_items#destroy"
+  put "/todo_items/:id", to: "todo_items#update"
+  delete "/todo_items/:id", to: "todo_items#destroy"
 
   # comments routes
-  post "/todo_items/{id}/comments", to: "comments#create"
-  delete "/todo_items/{id}/comments/{comment_id}", to: "comments#destroy"
+  post "/todo_items/:id/comments", to: "comments#create"
+  delete "/todo_items/:id/comments/:comment_id", to: "comments#destroy"
 
 end
