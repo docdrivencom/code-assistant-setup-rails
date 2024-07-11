@@ -1,7 +1,7 @@
 class CreateTodoItems < ActiveRecord::Migration[7.1]
     def up
         create_table :todo_items do |t|
-            # t.integer :id # this is not needed, Rails will create an id column by default
+            # t.integer :id # ALWAYS ignore ID's
             t.string :name
             t.bool :is_complete
             t.datetime :due_at
@@ -9,7 +9,7 @@ class CreateTodoItems < ActiveRecord::Migration[7.1]
 
         create_table :comments do |t|
             t.string :content
-            # t.integer :todo_item_id # this is not needed because of the belongs_to line below
+            # t.integer :todo_item_id # Ignore ID because of the belongs_to line below
             t.belongs_to :todo_item
         end
     end
